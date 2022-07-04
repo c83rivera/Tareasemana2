@@ -1,0 +1,64 @@
+const tarea = {
+    Nombre: `Carlos`,
+    Apellido: `Rivera`,
+    Nombre_usuario: `crivera`,
+    Edad: 38,
+    Email: `c83rivera@yahoo.com`,
+    Mayor_edad: `Si`,
+    Dinero_ahorrado: 800,
+    Deudas: 100,
+}
+console.log(`El Nombre Completo es:`,tarea.Nombre, tarea.Apellido);
+console.log(`Dinero real:`,tarea.Dinero_ahorrado-tarea.Deudas);
+
+const tarea = {
+    name1: `Carlos Raul`,
+    lastname: `Rivera De La Torre`,
+    nickname: `Charlie`,
+}
+
+const completeName = tarea.name1 +" "+ tarea.lastname;
+console.log(`Mi nombre es`,completeName, `pero prefiero que me digas`,tarea.nickname,`.`);
+
+const tipoDeMatricula = "Basic";
+if (tipoDeMatricula=="Free")
+    console.log("Solo puedes tomar los cursos gratis");
+else
+    if (tipoDeMatricula=="Basic")
+        console.log("Puedes tomar casi todos los cursos de ITI durante un mes");
+    else
+        if (tipoDeMatricula=="Expert")
+            console.log("Puedes tomar casi todos los cursos de ITI durante un año");
+        else
+            console.log("Tú y alguien más pueden tomar TODOS los cursos de ITI durante un año");
+
+
+let i = 0, j = 10;
+do{
+    console.log("El valor de i es: " + i);
+    i++;
+}while(i<5)
+
+do{
+    console.log("El valor de i es: " + j);
+    j--;
+}while(j>=2)
+
+
+do{
+    var numero = prompt("¿Cuanto es 2+2: ?");
+}while(numero != 4)
+alert("FELICITACIONES");
+
+
+const producto = {
+    nombre: 'Televisor',
+    precio: 700,
+    stock: 12,
+}
+const caliva = Math.trunc(producto.precio*12/100);
+
+console.log("El Nombre es:",producto.nombre);
+console.log("El Precio es: $",producto.precio);
+console.log("El Stock es: ",producto.stock-1);
+console.log("El IVA es: $",caliva);
